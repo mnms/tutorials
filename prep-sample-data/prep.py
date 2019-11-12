@@ -68,7 +68,7 @@ def arg_parser():
 
 
 # main
-def main(client, arg):
+def main(client, args):
     # Parameters
     datetime_start = args.start
     file_count = args.count
