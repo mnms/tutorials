@@ -2,8 +2,6 @@
 
 ## Prerequisite
 
-First, Install requirements
-
 * Python3 and libraries for development
   * `sudo yum install -y python3 python3-devel`
 * Python3 packages
@@ -13,10 +11,12 @@ First, Install requirements
 
 * Clone this repository
   * `git clone https://github.com/mnms/tutorials`
+* Walk inside this `prep-sample-data` directory
+  * `cd prep-sample-data/`
 
 ## Run script
 
-* Run Python script to generate
+* Run Python script to generate sample data
   * `python3 prep.py`
   * It may take 2~3 minutes for generate almost 51,800,000 rows with 24 files.
 
