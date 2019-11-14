@@ -2,7 +2,7 @@
 # coding: utf-8
 import os
 import random
-import warnings
+import logging
 import argparse
 
 import pandas as pd
@@ -161,7 +161,7 @@ def main(client, args):
     out = df_dtm.map_partitions(run_helper, df_name, df_sname, df_geo, out_dir, scale_factor, meta=meta_dtm).map_partitions(len).compute()
     nfiles = out.sum()
 
-    print("* {} files generated.".format(nfiles))
+    return nfiles
 
 
 if __name__ == '__main__':
@@ -169,6 +169,7 @@ if __name__ == '__main__':
     args = arg_parser()
 
     # Dask Client
-    with Client(n_workers=args.worker, threads_per_worker=2, processes=True) as client, warnings.catch_warnings():
-        warnings.simplefilter("ignore", category=UserWarning)
-        main(client, args)
+    with Client(n_workers=args.worker, threads_per_worker=2, silence_logs=logging.ERROR) as client:
+        print("* generating sample data...")
+        nfiles = main(client, args)
+        print("* {} files generated.".format(nfiles))
