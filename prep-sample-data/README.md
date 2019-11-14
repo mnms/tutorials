@@ -49,7 +49,7 @@ There're several options to generate sample data.
   * Let's look at the output files.
 
   ```sh
-    # Count how man rows
+    # Count how many rows
     $ wc -l ~/sample-data/*.csv
       4039084 /home/ec2-user/sample-data/198404200900.csv
       4407299 /home/ec2-user/sample-data/198404200905.csv

@@ -28,7 +28,7 @@ def sample_and_write_csv(event_time, df_name, df_sname, df_geo, out_dir, scale_f
     # Concat, assign event_dtm & reorder columns
     result = dd.concat([sample_name, sample_sname, sample_geo], axis='columns')
     result = result.assign(event_time=event_time).set_index('event_time')
-    result = result[['name', 'sur_name', 'sex', 'city', 'lattitude', 'longitude', 'country']]
+    result = result[['name', 'sur_name', 'sex', 'city', 'latitude', 'longitude', 'country']]
 
     # Write into one file
     result_fn = result.to_csv(out_csv, compute=True, single_file=True)
@@ -131,7 +131,7 @@ def main(client, args):
     pdf_sname = pd.read_csv(fn_sname, dtype=meta_sname)[['name']]
 
     # Rename columns
-    pdf_geo = pdf_geo.rename(columns={'city_ascii': 'city', 'lat': 'lattitude', 'lng': 'longitude'})
+    pdf_geo = pdf_geo.rename(columns={'city_ascii': 'city', 'lat': 'latitude', 'lng': 'longitude'})
     pdf_sname = pdf_sname.rename(columns={'name': 'sur_name'})
 
     # Convert Pandas DFs to Dask DFs
