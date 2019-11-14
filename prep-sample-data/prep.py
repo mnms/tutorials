@@ -21,9 +21,9 @@ def sample_and_write_csv(event_time, df_name, df_sname, df_geo, out_dir, scale_f
     frac_sname = ntarget / df_sname.shape[0].compute()
 
     # Sampling from Dataframe
-    sample_geo = df_geo.sample(frac=frac_geo, replace=True).reset_index(drop=True)
-    sample_name = df_name.sample(frac=frac_name, replace=True).reset_index(drop=True)
-    sample_sname = df_sname.sample(frac=frac_sname, replace=True).reset_index(drop=True)
+    sample_geo = df_geo.sample(frac=frac_geo, replace=True).reset_index(drop=True).reset_index().set_index('index')
+    sample_name = df_name.sample(frac=frac_name, replace=True).reset_index(drop=True).reset_index().set_index('index')
+    sample_sname = df_sname.sample(frac=frac_sname, replace=True).reset_index(drop=True).reset_index().set_index('index')
 
     # Concat, assign event_dtm & reorder columns
     result = dd.concat([sample_name, sample_sname, sample_geo], axis='columns')
@@ -34,7 +34,11 @@ def sample_and_write_csv(event_time, df_name, df_sname, df_geo, out_dir, scale_f
     result_fn = result.to_csv(out_csv, compute=True, single_file=True)
 
     # Free result values & return
+    del sample_geo
+    del sample_name
+    del sample_sname
     del result
+
     return result_fn
 
 
