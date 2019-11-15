@@ -1,0 +1,943 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n## Welcome to Zeppelin.\n##### This is a live tutorial, you can run the code yourself. (Shift-Enter to Run)",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-13 08:43:59.698",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eWelcome to Zeppelin.\u003c/h2\u003e\n\u003ch5\u003eThis is a live tutorial, you can run the code yourself. (Shift-Enter to Run)\u003c/h5\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573634592820_1893803286",
+      "id": "20191113-084312_71033313",
+      "dateCreated": "2019-11-13 08:43:12.820",
+      "dateStarted": "2019-11-13 08:43:59.698",
+      "dateFinished": "2019-11-13 08:44:02.076",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\ncd ~/tutorials/prep-sample-data\npython3 prep.py --outdir /nvme/data_01/loadData",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 06:27:45.674",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\ndistributed.comm.tcp - WARNING - Closing dangling stream in \u003cTCP  local\u003dtcp://127.0.0.1:42900 remote\u003dtcp://127.0.0.1:44149\u003e\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\ndistributed.comm.tcp - WARNING - Closing dangling stream in \u003cTCP  local\u003dtcp://127.0.0.1:42902 remote\u003dtcp://127.0.0.1:44149\u003e\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n* 24 files generated.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573705262496_-1426672272",
+      "id": "20191114-042102_932829872",
+      "dateCreated": "2019-11-14 04:21:02.496",
+      "dateStarted": "2019-11-14 06:27:45.697",
+      "dateFinished": "2019-11-14 06:28:59.581",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\nval csvDf \u003d spark.sqlContext.read\n    .format(\"csv\")\n    .option(\"header\", \"true\")\n    .option(\"inferSchema\", \"true\")\n    .load(\"file:///nvme/data_01/loadData\")\n\ncsvDf.createOrReplaceTempView(\"CSV_DATA\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:12:02.599",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "csvDf: org.apache.spark.sql.DataFrame \u003d [event_time: bigint, name: string ... 6 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573634636649_-1510457535",
+      "id": "20191113-084356_929059768",
+      "dateCreated": "2019-11-13 08:43:56.649",
+      "dateStarted": "2019-11-14 10:12:02.612",
+      "dateFinished": "2019-11-14 10:12:31.779",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\nspark.sql(\"\"\"CREATE OR REPLACE TEMPORARY VIEW LIGHTNING_TUTORIAL\n            |(EVENT_TIME STRING, NAME STRING, SUR_NAME STRING, SEX STRING, CITY STRING, LATITUDE DOUBLE, LONGITUDE DOUBLE, COUNTRY STRING)\n            |USING r2\n            |OPTIONS (table \u0027100\u0027, host \u0027127.0.0.1\u0027, port \u002718100\u0027, partitions \u0027EVENT_TIME CITY\u0027, mode \u0027nvkvs\u0027, rowstore \u0027true\u0027, at_least_one_partition_enabled \u0027no\u0027)\"\"\".stripMargin).show()\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:14:19.953",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "++\n||\n++\n++\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573635630946_883176152",
+      "id": "20191113-090030_1825956406",
+      "dateCreated": "2019-11-13 09:00:30.946",
+      "dateStarted": "2019-11-14 10:14:19.966",
+      "dateFinished": "2019-11-14 10:14:20.148",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%spark\nspark.sql(\"INSERT INTO LIGHTNING_TUTORIAL SELECT * FROM CSV_DATA\").show",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:14:52.780",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "++\n||\n++\n++\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573643455423_-279665037",
+      "id": "20191113-111055_1491832496",
+      "dateCreated": "2019-11-13 11:10:55.423",
+      "dateStarted": "2019-11-14 10:14:52.793",
+      "dateFinished": "2019-11-14 10:16:33.144",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT COUNT(*) FROM LIGHTNING_TUTORIAL",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:17:33.519",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "count(1)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "count(1)",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "count(1)\n51542117\n"
+          },
+          {
+            "type": "TEXT",
+            "data": ""
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573635671509_2018443029",
+      "id": "20191113-090111_1840793847",
+      "dateCreated": "2019-11-13 09:01:11.509",
+      "dateStarted": "2019-11-14 10:17:33.531",
+      "dateFinished": "2019-11-14 10:17:35.201",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT * FROM LIGHTNING_TUTORIAL LIMIT 20",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:17:39.121",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "EVENT_TIME": "string",
+                      "NAME": "string",
+                      "SUR_NAME": "string",
+                      "SEX": "string",
+                      "CITY": "string",
+                      "LATITUDE": "string",
+                      "LONGITUDE": "string",
+                      "COUNTRY": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "EVENT_TIME\tNAME\tSUR_NAME\tSEX\tCITY\tLATITUDE\tLONGITUDE\tCOUNTRY\n201903011340\tLora\tPOPS\tgirl\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tDenis\tALE\tboy\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tDee\tURBANEC\tboy\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tMarcia\tNEDBALEK\tgirl\tOregon\t42.9252\t-89.3887\tUnited States\n201903011340\tVerne\tTREPAGNIER\tboy\tOregon\t42.9252\t-89.3887\tUnited States\n201903011340\tDevon\tPALJEVIC\tboy\tOregon\t42.9252\t-89.3887\tUnited States\n201903011340\tWelton\tARELIANES\tboy\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tJabari\tLITWACK\tboy\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tAlonso\tKARKLINS\tboy\tOregon\t42.9252\t-89.3887\tUnited States\n201903011340\tWoodrow\tMCCONCHIE\tboy\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tVicente\tSCANDONE\tboy\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tWilliam\tMATOSSIAN\tgirl\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tJohnie\tMARHEFKA\tgirl\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tWright\tSANDHAUS\tboy\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tNoah\tBRIMM\tboy\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tDanica\tHERSCHLEB\tgirl\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tLenard\tFANZ\tboy\tOregon\t42.9252\t-89.3887\tUnited States\n201903011340\tJocelyn\tIACOPELLI\tgirl\tOregon\t42.9252\t-89.3887\tUnited States\n201903011340\tEttie\tHOLZSCHUH\tgirl\tOregon\t41.6528\t-83.432\tUnited States\n201903011340\tArtie\tTREBINO\tboy\tOregon\t42.9252\t-89.3887\tUnited States\n"
+          },
+          {
+            "type": "TEXT",
+            "data": ""
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573725677524_1476725875",
+      "id": "20191114-100117_88920203",
+      "dateCreated": "2019-11-14 10:01:17.524",
+      "dateStarted": "2019-11-14 10:17:38.777",
+      "dateFinished": "2019-11-14 10:17:38.878",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT COUNTRY, COUNT(*) AS PEOPLE_COUNT FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011425\u0027 GROUP BY COUNTRY ORDER BY PEOPLE_COUNT DESC LIMIT 100",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:18:12.089",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "COUNTRY": "string",
+                      "PEOPLE_COUNT": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "COUNTRY",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "PEOPLE_COUNT",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "COUNTRY\tPEOPLE_COUNT\nUnited States\t814762\nRussia\t95821\nChina\t67128\nBrazil\t64756\nCanada\t41874\nUnited Kingdom\t38356\nAustralia\t36563\nIndia\t35667\nSlovenia\t35636\nMexico\t31364\nArgentina\t25938\nSerbia\t24335\nUganda\t20980\nPhilippines\t19820\nLatvia\t18870\nIndonesia\t18012\nKazakhstan\t15795\nTurkey\t15226\nCongo (Kinshasa)\t14845\nPeru\t14761\nChile\t14133\nThailand\t14098\nJapan\t12816\nVietnam\t12410\nNigeria\t12196\nAzerbaijan\t12181\nColombia\t12079\nSouth Africa\t12016\nMacedonia\t11903\nBolivia\t11699\nMalta\t11499\nIran\t10814\nTanzania\t10546\nAlgeria\t10138\nKenya\t10031\nGermany\t9840\nFrance\t9718\nItaly\t9292\nLithuania\t9172\nUkraine\t8712\nVenezuela\t8464\nAngola\t8149\nSpain\t8144\nNew Zealand\t8087\nRomania\t7147\nEgypt\t7133\nAfghanistan\t6895\nPakistan\t6853\nEcuador\t6716\nLibya\t6400\nMoldova\t6279\nBurma\t6235\nKosovo\t6222\nParaguay\t6209\nNorway\t6202\nEthiopia\t6109\nSweden\t5921\nSudan\t5847\nZambia\t5739\nIreland\t5705\nBurkina Faso\t5570\nMalaysia\t5485\nMozambique\t5458\nUruguay\t5435\nSaudi Arabia\t5414\nGreece\t5393\nDominican Republic\t5390\nSwitzerland\t5363\nNamibia\t5233\nKorea, South\t5224\nMali\t5209\nCameroon\t5110\nMalawi\t5060\nUzbekistan\t5008\nFaroe Islands\t4910\nKorea, North\t4803\nGuinea\t4794\nSomalia\t4678\nMadagascar\t4670\nTaiwan\t4657\nMongolia\t4636\nIraq\t4569\nBulgaria\t4533\nChad\t4531\nCuba\t4478\nTunisia\t4463\nCambodia\t4458\nYemen\t4442\nCôte D’Ivoire\t4409\nAlbania\t4349\nGuatemala\t4337\nHungary\t4238\nBotswana\t4175\nPoland\t4165\nPortugal\t4041\nFinland\t4002\nMontenegro\t3929\nZimbabwe\t3844\nPapua New Guinea\t3829\nMauritania\t3768\n"
+          },
+          {
+            "type": "TEXT",
+            "data": ""
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573713895893_2131617826",
+      "id": "20191114-064455_366662871",
+      "dateCreated": "2019-11-14 06:44:55.893",
+      "dateStarted": "2019-11-14 10:18:12.102",
+      "dateFinished": "2019-11-14 10:18:12.930",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT CITY, COUNT(*) AS PEOPLE_COUNT FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011425\u0027 AND COUNTRY \u003d \u0027United States\u0027 GROUP BY CITY ORDER BY PEOPLE_COUNT DESC LIMIT 100",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:18:35.361",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "CITY",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "PEOPLE_COUNT",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1.0,
+                      "paginationPageSize": 250.0
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "updated": false,
+                    "names": {
+                      "CITY": "string",
+                      "PEOPLE_COUNT": "string"
+                    }
+                  },
+                  "updated": false,
+                  "initialized": false,
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  }
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "pieChart": {},
+                "scatterChart": {
+                  "xAxis": {
+                    "name": "CITY",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  },
+                  "yAxis": {
+                    "name": "count(1)",
+                    "index": 2.0,
+                    "aggr": "sum"
+                  }
+                }
+              },
+              "keys": [
+                {
+                  "name": "CITY",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "PEOPLE_COUNT",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "CITY\tPEOPLE_COUNT\nFranklin\t1835\nClinton\t1646\nWashington\t1565\nSpringfield\t1554\nGreenville\t1491\nJackson\t1486\nMarion\t1375\nMonroe\t1335\nSalem\t1333\nLebanon\t1252\nRichmond\t1199\nColumbia\t1158\nAuburn\t1137\nFarmington\t1061\nLancaster\t1057\nFlorence\t1041\nPortland\t1040\nTroy\t1031\nJacksonville\t1030\nLexington\t1026\nAshland\t1023\nMiddletown\t1021\nPrinceton\t1009\nBurlington\t1007\nBellevue\t999\nMount Vernon\t995\nIndependence\t990\nMadison\t989\nCovington\t975\nColumbus\t961\nMonticello\t934\nMilton\t902\nDecatur\t889\nGreenwood\t889\nDayton\t887\nCanton\t885\nGarden City\t884\nHenderson\t880\nNewton\t878\nDover\t876\nLafayette\t869\nMount Pleasant\t867\nHarrison\t857\nPlymouth\t854\nClayton\t851\nBristol\t843\nGlendale\t841\nCleveland\t838\nRochester\t833\nNewport\t832\nUnion City\t828\nAlexandria\t826\nAthens\t824\nNewark\t823\nOxford\t808\nDanville\t791\nManchester\t775\nBrentwood\t730\nNew Castle\t702\nChester\t701\nBedford\t699\nHighland Park\t699\nParis\t698\nTrenton\t697\nMarysville\t692\nQuincy\t690\nAlbany\t690\nJasper\t689\nAberdeen\t687\nLawrence\t684\nCambridge\t682\nWarren\t681\nSidney\t679\nCharleston\t679\nSelma\t677\nLakewood\t670\nHillsboro\t669\nLincoln\t668\nLowell\t667\nHighland\t666\nMontgomery\t663\nWilmington\t663\nMarshall\t661\nFairfield\t660\nNorwalk\t654\nAurora\t653\nGeorgetown\t653\nCenterville\t653\nWatertown\t645\nLa Grange\t641\nGreenfield\t639\nFayetteville\t637\nUnion\t637\nPortage\t634\nSaint Joseph\t633\nFairview\t623\nAnderson\t557\nMaywood\t554\nEnglewood\t549\nBelton\t549\n"
+          },
+          {
+            "type": "TEXT",
+            "data": ""
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573641870043_-552126783",
+      "id": "20191113-104430_898966897",
+      "dateCreated": "2019-11-13 10:44:30.044",
+      "dateStarted": "2019-11-14 10:18:35.375",
+      "dateFinished": "2019-11-14 10:18:36.044",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT NAME, COUNT(*) AS PEOPLE_COUNT FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003e\u003d \u0027201903011330\u0027 AND EVENT_TIME \u003c\u003d \u0027201903011425\u0027 AND COUNTRY \u003d \u0027Russia\u0027  GROUP BY NAME ORDER BY PEOPLE_COUNT DESC LIMIT 100",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:19:31.086",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "NAME": "string",
+                      "PEOPLE_COUNT": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "NAME",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "PEOPLE_COUNT",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "NAME\tPEOPLE_COUNT\nJean\t1136\nJessie\t1120\nJohn\t1111\nLee\t1109\nJames\t1103\nLeslie\t1071\nGuadalupe\t1048\nWilliam\t1040\nRobert\t1030\nDana\t1027\nMarion\t1023\nWillie\t1010\nCharles\t991\nFrancis\t989\nMary\t986\nJohnnie\t952\nSidney\t949\nJoe\t949\nJoseph\t947\nBillie\t947\nJimmie\t935\nEddie\t932\nTommie\t902\nCarmen\t899\nConnie\t898\nLonnie\t892\nFrances\t889\nCharlie\t887\nShirley\t883\nThomas\t882\nBennie\t878\nFrankie\t873\nMichael\t867\nGeorge\t867\nBonnie\t864\nHenry\t856\nTracy\t855\nRay\t853\nRichard\t851\nShelby\t850\nCarol\t850\nLynn\t843\nTerry\t835\nFreddie\t832\nRuby\t830\nBobbie\t823\nKelly\t823\nElizabeth\t819\nNoel\t816\nDavid\t812\nMargaret\t812\nDale\t804\nOllie\t798\nCecil\t796\nJerry\t795\nFrank\t795\nGene\t790\nHelen\t790\nMerle\t778\nMorgan\t776\nClare\t772\nChristian\t770\nIra\t770\nEdward\t767\nIvy\t766\nHazel\t766\nJamie\t765\nVivian\t764\nSandy\t763\nJewel\t761\nGail\t758\nJesse\t748\nRuth\t747\nDorothy\t746\nRene\t744\nPatricia\t743\nAubrey\t740\nBarbara\t740\nAdrian\t739\nTaylor\t739\nJune\t739\nAnnie\t738\nAnna\t738\nJackie\t736\nSammie\t735\nDonnie\t734\nWalter\t732\nPearl\t729\nGrace\t726\nEmma\t726\nLinda\t726\nClyde\t724\nJordan\t711\nArthur\t709\nAlma\t708\nAudrey\t708\nHarold\t702\nAlice\t698\nAngel\t698\nLillian\t697\n"
+          },
+          {
+            "type": "TEXT",
+            "data": ""
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573716450499_155582333",
+      "id": "20191114-072730_1892952575",
+      "dateCreated": "2019-11-14 07:27:30.499",
+      "dateStarted": "2019-11-14 10:19:31.099",
+      "dateFinished": "2019-11-14 10:19:32.595",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT DISTINCT CITY, LATITUDE AS LAT, LONGITUDE AS LON FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011230\u0027 AND LATITUDE \u003e 0 ORDER BY LAT DESC LIMIT 20",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:19:38.759",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "zeppelin-leaflet",
+              "height": 300.0,
+              "optionOpen": true,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "CITY": "string",
+                      "LAT": "string",
+                      "LON": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "zeppelin-leaflet": {
+                  "latitude": {
+                    "name": "LAT",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  },
+                  "longitude": {
+                    "name": "LON",
+                    "index": 2.0,
+                    "aggr": "sum"
+                  },
+                  "tooltip": {
+                    "name": "CITY",
+                    "index": 0.0,
+                    "aggr": "sum"
+                  }
+                }
+              },
+              "keys": [
+                {
+                  "name": "YYYYMMDDHHMM",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "round(avg(LATTITUDE), 2)",
+                  "index": 2.0,
+                  "aggr": "sum"
+                },
+                {
+                  "name": "round(avg(LONGITUDE), 2)",
+                  "index": 3.0,
+                  "aggr": "sum"
+                }
+              ],
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "CITY\tLAT\tLON\nAlert\t82.4833\t-62.25\nNord\t81.7166\t-17.8\nLongyearbyen\t78.2167\t15.6333\nQaanaaq\t77.4835\t-69.3322\nGrise Fiord\t76.4417\t-82.95\nSavissivik\t76.0195\t-65.1125\nZemlya Bunge\t74.8983\t142.105\nResolute\t74.6833\t-94.9\nKullorsuaq\t74.5781\t-57.225\nNuussuaq\t74.121\t-57.0674\nNordvik\t74.0165\t111.51\nDikson\t73.507\t80.5451\nKhorgo\t73.4833\t113.63\nSagastyr\t73.3779\t126.5924\nTasiusaq\t73.369\t-56.0598\nMatochkin Shar\t73.27\t56.4497\nShalaurova\t73.2204\t143.1833\nArctic Bay\t73.0333\t-85.1666\nUst Olensk\t72.9978\t119.7729\nStarorybnoye\t72.7666\t104.8\n"
+          },
+          {
+            "type": "TEXT",
+            "data": ""
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573643769261_260244899",
+      "id": "20191113-111609_1486788551",
+      "dateCreated": "2019-11-13 11:16:09.261",
+      "dateStarted": "2019-11-14 10:19:38.773",
+      "dateFinished": "2019-11-14 10:19:39.880",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT CITY, LATITUDE AS LAT, LONGITUDE AS LON, COUNT(*) AS SURNAME_PEOPLE_COUNT FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011230\u0027 AND SUR_NAME IN (SELECT SUR_NAME FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011230\u0027 GROUP BY SUR_NAME ORDER BY COUNT(*) DESC LIMIT 1) GROUP BY CITY, LAT, LON",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-14 10:19:48.506",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "zeppelin-leaflet",
+              "height": 300.0,
+              "optionOpen": true,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "CITY": "string",
+                      "LAT": "string",
+                      "LON": "string",
+                      "SURNAME_PEOPLE_COUNT": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "zeppelin-leaflet": {
+                  "latitude": {
+                    "name": "LAT",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  },
+                  "longitude": {
+                    "name": "LON",
+                    "index": 2.0,
+                    "aggr": "sum"
+                  },
+                  "tooltip": {
+                    "name": "CITY",
+                    "index": 0.0,
+                    "aggr": "sum"
+                  }
+                }
+              },
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "CITY\tLAT\tLON\tSURNAME_PEOPLE_COUNT\nCatamarca\t-28.47\t-65.78\t1\nCaledonia\t42.7987\t-87.8762\t1\nTunis\t36.8028\t10.1797\t1\nKoumra\t8.9126\t17.5539\t1\nManteo\t35.9013\t-75.6611\t1\nQusar\t41.4275\t48.4302\t1\nDefiance\t41.281\t-84.366\t1\nUsolye Sibirskoye\t52.765\t103.645\t1\nSuhar\t24.3643\t56.7468\t1\nMoron\t22.1099\t-78.6275\t1\nCharleston\t38.3484\t-81.6323\t1\nShonzhy\t43.5421\t79.4703\t1\nWhite House\t36.4646\t-86.6662\t1\nGreat Falls\t47.5022\t-111.2995\t1\nZamboanga\t6.92\t122.08\t1\nAmbler\t40.1564\t-75.2215\t1\nBremerton\t47.5436\t-122.7122\t1\nPochutla\t15.7304\t-96.47\t1\nPleasant Hills\t40.3298\t-79.9596\t1\nTiznit\t29.7104\t-9.74\t1\nMilpitas\t37.4338\t-121.8921\t1\nRaska\t43.2859\t20.6135\t1\nSeneca\t34.6816\t-82.9609\t1\nPiso Firme\t-13.683\t-61.8666\t1\nKokomo\t40.464\t-86.1277\t1\nAweil\t8.7666\t27.4\t1\nGoteborg\t57.75\t12.0\t1\nPucallpa\t-8.3689\t-74.535\t1\nAbengourou\t6.7304\t-3.49\t1\nMalegaon\t20.5604\t74.525\t1\nCampo Grande\t-20.45\t-54.6166\t1\nVichuga\t57.2191\t41.9287\t1\nKaraj\t35.8004\t50.97\t1\nSedalia\t38.7043\t-93.2349\t1\n"
+          },
+          {
+            "type": "TEXT",
+            "data": ""
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1573723628737_1597966101",
+      "id": "20191114-092708_1878508289",
+      "dateCreated": "2019-11-14 09:27:08.737",
+      "dateStarted": "2019-11-14 10:19:48.518",
+      "dateFinished": "2019-11-14 10:19:50.820",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "LightningDB Tutorial",
+  "id": "2ERSHVEYQ",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "sh:shared_process": [],
+    "spark:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
