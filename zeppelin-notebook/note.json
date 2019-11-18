@@ -3,7 +3,7 @@
     {
       "text": "%md\n## Welcome to Zeppelin.\n##### This is a live tutorial, you can run the code yourself. (Shift-Enter to Run)",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 04:44:23.189",
+      "dateUpdated": "2019-11-18 07:54:15.919",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -33,32 +33,31 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312899_171660148",
+      "jobName": "paragraph_1574063655918_1072227622",
       "id": "20191113-084312_71033313",
-      "dateCreated": "2019-11-18 03:38:32.899",
-      "dateStarted": "2019-11-18 04:44:23.189",
-      "dateFinished": "2019-11-18 04:44:23.200",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.919",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n#### 1. Clone a tutorial repository.\n\nThe repository includes a tool for generating sample data and a notebook for tutorial.",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 05:55:28.277",
+      "dateUpdated": "2019-11-18 07:54:15.920",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
+        "tableHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
           "completionKey": "TAB",
           "completionSupport": false
         },
+        "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
         "editorHide": true,
-        "tableHide": false
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -74,18 +73,88 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574052169836_1072581180",
+      "jobName": "paragraph_1574063655919_-547816658",
       "id": "20191118-044249_1240062393",
-      "dateCreated": "2019-11-18 04:42:49.836",
-      "dateStarted": "2019-11-18 05:55:28.277",
-      "dateFinished": "2019-11-18 05:55:28.282",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.919",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sh\ncd ~/\ngit clone https://github.com/mnms/tutorials.git",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 04:42:49.705",
+      "dateUpdated": "2019-11-18 07:57:07.177",
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574063655920_354536472",
+      "id": "20191114-042102_932829872",
+      "dateCreated": "2019-11-18 07:54:15.920",
+      "dateStarted": "2019-11-18 07:57:07.198",
+      "dateFinished": "2019-11-18 07:57:10.254",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n#### 2. Generate sample data\n\nYou can find various options of generator in this [page](https://github.com/mnms/tutorials/tree/master/prep-sample-data#options).\nNow, generate 24 csv files in /nvme/data_01/loadData. Each file has 2,296,622 rows.",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-18 07:54:15.920",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch4\u003e2. Generate sample data\u003c/h4\u003e\n\u003cp\u003eYou can find various options of generator in this \u003ca href\u003d\"https://github.com/mnms/tutorials/tree/master/prep-sample-data#options\"\u003epage\u003c/a\u003e.\u003cbr/\u003eNow, generate 24 csv files in /nvme/data_01/loadData. Each file has 2,296,622 rows.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574063655920_-1536591945",
+      "id": "20191118-054547_1991349652",
+      "dateCreated": "2019-11-18 07:54:15.920",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\ncd ~/tutorials/prep-sample-data\npython3 prep.py --outdir /nvme/data_01/loadData",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-18 07:58:21.699",
       "config": {
         "editorSetting": {
           "language": "sh",
@@ -108,116 +177,37 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\ndistributed.comm.tcp - WARNING - Closing dangling stream in \u003cTCP  local\u003dtcp://127.0.0.1:42900 remote\u003dtcp://127.0.0.1:44149\u003e\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\ndistributed.comm.tcp - WARNING - Closing dangling stream in \u003cTCP  local\u003dtcp://127.0.0.1:42902 remote\u003dtcp://127.0.0.1:44149\u003e\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n* 24 files generated.\n"
+            "data": "* generating sample data...\n* 24 files generated.\n"
           }
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312900_1214129120",
-      "id": "20191114-042102_932829872",
-      "dateCreated": "2019-11-18 03:38:32.900",
-      "status": "READY",
-      "errorMessage": "",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "text": "%md\n#### 2. Generate sample data\n\nYou can find various options of generator in this [page](https://github.com/mnms/tutorials/tree/master/prep-sample-data#options).\nNow, generate 24 csv files in /nvme/data_01/loadData. Each file has 2,296,622 rows.",
-      "user": "anonymous",
-      "dateUpdated": "2019-11-18 06:01:18.858",
-      "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
-        "editorSetting": {
-          "language": "markdown",
-          "editOnDblClick": true,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/markdown",
-        "editorHide": true,
-        "tableHide": false
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch4\u003e2. Generate sample data\u003c/h4\u003e\n\u003cp\u003eYou can find various options of generator in this \u003ca href\u003d\"https://github.com/mnms/tutorials/tree/master/prep-sample-data#options\"\u003epage\u003c/a\u003e.\u003cbr/\u003eNow, generate 24 csv files in /nvme/data_01/loadData. Each file has 2,296,622 rows.\u003c/p\u003e\n\u003c/div\u003e"
-          }
-        ]
-      },
-      "apps": [],
-      "jobName": "paragraph_1574055947255_1380853086",
-      "id": "20191118-054547_1991349652",
-      "dateCreated": "2019-11-18 05:45:47.255",
-      "dateStarted": "2019-11-18 06:01:18.859",
-      "dateFinished": "2019-11-18 06:01:18.863",
-      "status": "FINISHED",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "text": "%sh\ncd ~/tutorials/prep-sample-data\npython3 prep.py --outdir /nvme/data_01/loadData",
-      "user": "anonymous",
-      "dateUpdated": "2019-11-18 05:51:05.275",
-      "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
-        "editorSetting": {
-          "language": "sh",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "editorMode": "ace/mode/sh"
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\ndistributed.comm.tcp - WARNING - Closing dangling stream in \u003cTCP  local\u003dtcp://127.0.0.1:65384 remote\u003dtcp://127.0.0.1:35197\u003e\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\ndistributed.comm.tcp - WARNING - Closing dangling stream in \u003cTCP  local\u003dtcp://127.0.0.1:46618 remote\u003dtcp://127.0.0.1:48725\u003e\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\ndistributed.comm.tcp - WARNING - Closing dangling stream in \u003cTCP  local\u003dtcp://127.0.0.1:45336 remote\u003dtcp://127.0.0.1:38891\u003e\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n/home/ec2-user/.local/lib/python3.7/site-packages/dask/dataframe/multi.py:1055: UserWarning: Concatenating dataframes with unknown divisions.\nWe\u0027re assuming that the indexes of each dataframes are \n aligned. This assumption is not generally safe.\n  \"Concatenating dataframes with unknown divisions.\\n\"\n* 24 files generated.\n"
-          }
-        ]
-      },
-      "apps": [],
-      "jobName": "paragraph_1574052157936_2030232720",
+      "jobName": "paragraph_1574063655920_500130433",
       "id": "20191118-044237_1397043835",
-      "dateCreated": "2019-11-18 04:42:37.936",
-      "dateStarted": "2019-11-18 05:51:05.298",
-      "dateFinished": "2019-11-18 05:52:37.272",
+      "dateCreated": "2019-11-18 07:54:15.920",
+      "dateStarted": "2019-11-18 07:58:21.721",
+      "dateFinished": "2019-11-18 07:59:54.633",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n#### 3. Create a temporary view of CSV data\n\nLoad CSV data, and create a temporary view. This view will be used to insert into a table of LightningDB.",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 06:45:18.499",
+      "dateUpdated": "2019-11-18 07:54:15.920",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
+        "tableHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
           "completionKey": "TAB",
           "completionSupport": false
         },
+        "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
         "editorHide": true,
-        "tableHide": false
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -233,18 +223,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574056576671_1377118048",
+      "jobName": "paragraph_1574063655920_1701126021",
       "id": "20191118-055616_1455560182",
-      "dateCreated": "2019-11-18 05:56:16.671",
-      "dateStarted": "2019-11-18 06:45:18.499",
-      "dateFinished": "2019-11-18 06:45:18.504",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.920",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%spark\nval csvDf \u003d spark.sqlContext.read\n    .format(\"csv\")\n    .option(\"header\", \"true\")\n    .option(\"inferSchema\", \"true\")\n    .load(\"file:///nvme/data_01/loadData\")\n\ncsvDf.createOrReplaceTempView(\"CSV_DATA\")\n",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 06:10:21.235",
+      "dateUpdated": "2019-11-18 07:54:15.921",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -272,32 +261,31 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312900_531385035",
+      "jobName": "paragraph_1574063655921_203023979",
       "id": "20191113-084356_929059768",
-      "dateCreated": "2019-11-18 03:38:32.900",
-      "dateStarted": "2019-11-18 06:10:21.253",
-      "dateFinished": "2019-11-18 06:10:50.694",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.921",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n#### 4. Table schema of CSV data\n\nCSV data include event_time, name, sur_name, sex, city, latitude, longitude and country.\nThe latitude and longitude are the coordinate of the city.\n",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 06:45:22.114",
+      "dateUpdated": "2019-11-18 07:54:15.921",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
+        "tableHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
           "completionKey": "TAB",
           "completionSupport": false
         },
+        "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
         "editorHide": true,
-        "tableHide": false
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -313,30 +301,29 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574057465533_-1718339567",
+      "jobName": "paragraph_1574063655921_-1380611131",
       "id": "20191118-061105_1997766542",
-      "dateCreated": "2019-11-18 06:11:05.533",
-      "dateStarted": "2019-11-18 06:45:22.114",
-      "dateFinished": "2019-11-18 06:45:22.119",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.921",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%spark\ncsvDf.show()",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 06:10:54.872",
+      "dateUpdated": "2019-11-18 07:54:15.921",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
         "editorSetting": {
           "language": "scala",
           "editOnDblClick": false,
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "editorMode": "ace/mode/scala"
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -352,32 +339,31 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574056808719_417218887",
+      "jobName": "paragraph_1574063655921_-997071330",
       "id": "20191118-060008_627652660",
-      "dateCreated": "2019-11-18 06:00:08.719",
-      "dateStarted": "2019-11-18 06:10:54.890",
-      "dateFinished": "2019-11-18 06:10:58.144",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.921",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n#### 5. Create Table of LightningDB\n\nThe name of data source is \"r2\", which means \"redis + rockdb\".\nThe data source has various options, and you can check it in [this page](https://mnms.github.io/docs/data-ingestion-and-querying/)\nThe columns of EVENT_TIME and CITY are used as partition column. The partitions columns are important for performance because they are not only norms for distributing data during ingestion, but keys of filtering data during querying.\n",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:15:21.975",
+      "dateUpdated": "2019-11-18 07:54:15.921",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
+        "tableHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
           "completionKey": "TAB",
           "completionSupport": false
         },
+        "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
         "editorHide": true,
-        "tableHide": false
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -393,18 +379,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574058913561_1961990055",
+      "jobName": "paragraph_1574063655921_2057982780",
       "id": "20191118-063513_271509080",
-      "dateCreated": "2019-11-18 06:35:13.561",
-      "dateStarted": "2019-11-18 07:15:21.975",
-      "dateFinished": "2019-11-18 07:15:21.980",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.921",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%spark\nspark.sql(\"\"\"CREATE OR REPLACE TEMPORARY VIEW LIGHTNING_TUTORIAL\n            |(EVENT_TIME STRING, NAME STRING, SUR_NAME STRING, SEX STRING, CITY STRING, LATITUDE DOUBLE, LONGITUDE DOUBLE, COUNTRY STRING)\n            |USING r2\n            |OPTIONS (table \u0027100\u0027, host \u0027127.0.0.1\u0027, port \u002718100\u0027, partitions \u0027EVENT_TIME CITY\u0027, mode \u0027nvkvs\u0027, rowstore \u0027true\u0027, at_least_one_partition_enabled \u0027no\u0027)\"\"\".stripMargin).show()\n",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 06:44:46.949",
+      "dateUpdated": "2019-11-18 07:54:15.921",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -432,32 +417,31 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312900_-2060158770",
+      "jobName": "paragraph_1574063655921_-1512698927",
       "id": "20191113-090030_1825956406",
-      "dateCreated": "2019-11-18 03:38:32.900",
-      "dateStarted": "2019-11-18 06:44:46.972",
-      "dateFinished": "2019-11-18 06:44:47.365",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.921",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n#### 6. Insert CSV data into LightningDB.\n\nInsert CSV data into LightningDB.",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:17:51.728",
+      "dateUpdated": "2019-11-18 07:54:15.922",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
+        "tableHide": true,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
           "completionKey": "TAB",
           "completionSupport": false
         },
+        "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
         "editorHide": false,
-        "tableHide": true
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -473,18 +457,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574059532560_29640581",
+      "jobName": "paragraph_1574063655922_547118594",
       "id": "20191118-064532_280573780",
-      "dateCreated": "2019-11-18 06:45:32.560",
-      "dateStarted": "2019-11-18 07:09:07.027",
-      "dateFinished": "2019-11-18 07:09:07.152",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.922",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%spark\nspark.sql(\"INSERT INTO LIGHTNING_TUTORIAL SELECT * FROM CSV_DATA\").show",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:08:29.321",
+      "dateUpdated": "2019-11-18 07:54:15.922",
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -512,32 +495,31 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312900_2119257580",
+      "jobName": "paragraph_1574063655922_-1712891052",
       "id": "20191113-111055_1491832496",
-      "dateCreated": "2019-11-18 03:38:32.900",
-      "dateStarted": "2019-11-18 07:08:29.340",
-      "dateFinished": "2019-11-18 07:10:10.388",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.922",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n#### 7. Querying data from LightningDB.\n\nNow, you can query data from LightningDB.\nEach redis node of LightningDB is assigned to a single Spark partition.",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:39:37.515",
+      "dateUpdated": "2019-11-18 07:54:15.922",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
+        "tableHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
           "completionKey": "TAB",
           "completionSupport": false
         },
+        "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
         "editorHide": true,
-        "tableHide": false
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -553,18 +535,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574061460379_-768962718",
+      "jobName": "paragraph_1574063655922_-363826407",
       "id": "20191118-071740_398829111",
-      "dateCreated": "2019-11-18 07:17:40.379",
-      "dateStarted": "2019-11-18 07:39:37.515",
-      "dateFinished": "2019-11-18 07:39:37.519",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.922",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql\nSELECT COUNT(*) FROM LIGHTNING_TUTORIAL",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:11:57.310",
+      "dateUpdated": "2019-11-18 07:54:15.922",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -640,18 +621,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312901_1208751405",
+      "jobName": "paragraph_1574063655922_-393319583",
       "id": "20191113-090111_1840793847",
-      "dateCreated": "2019-11-18 03:38:32.901",
-      "dateStarted": "2019-11-18 07:11:57.331",
-      "dateFinished": "2019-11-18 07:11:58.970",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.922",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql\nSELECT * FROM LIGHTNING_TUTORIAL LIMIT 20",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 03:38:32.901",
+      "dateUpdated": "2019-11-18 07:54:15.923",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -718,9 +698,9 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312901_933508112",
+      "jobName": "paragraph_1574063655922_267452823",
       "id": "20191114-100117_88920203",
-      "dateCreated": "2019-11-18 03:38:32.901",
+      "dateCreated": "2019-11-18 07:54:15.922",
       "status": "READY",
       "errorMessage": "",
       "progressUpdateIntervalMs": 500
@@ -728,7 +708,7 @@
     {
       "text": "%sql\nSELECT COUNTRY, COUNT(*) AS PEOPLE_COUNT FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011425\u0027 GROUP BY COUNTRY ORDER BY PEOPLE_COUNT DESC LIMIT 100",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:44:32.242",
+      "dateUpdated": "2019-11-18 07:54:15.923",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -812,18 +792,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312901_-705228598",
+      "jobName": "paragraph_1574063655923_1688709214",
       "id": "20191114-064455_366662871",
-      "dateCreated": "2019-11-18 03:38:32.901",
-      "dateStarted": "2019-11-18 07:44:32.264",
-      "dateFinished": "2019-11-18 07:44:33.017",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.923",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql\nSELECT CITY, COUNT(*) AS PEOPLE_COUNT FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011425\u0027 AND COUNTRY \u003d \u0027United States\u0027 GROUP BY CITY ORDER BY PEOPLE_COUNT DESC LIMIT 100",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:44:28.182",
+      "dateUpdated": "2019-11-18 07:54:15.923",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -966,18 +945,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312902_1566213399",
+      "jobName": "paragraph_1574063655923_-1473896289",
       "id": "20191113-104430_898966897",
-      "dateCreated": "2019-11-18 03:38:32.902",
-      "dateStarted": "2019-11-18 07:44:28.203",
-      "dateFinished": "2019-11-18 07:44:28.817",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.923",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql\nSELECT NAME, COUNT(*) AS PEOPLE_COUNT FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003e\u003d \u0027201903011330\u0027 AND EVENT_TIME \u003c\u003d \u0027201903011425\u0027 AND COUNTRY \u003d \u0027Russia\u0027  GROUP BY NAME ORDER BY PEOPLE_COUNT DESC LIMIT 100",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:44:22.783",
+      "dateUpdated": "2019-11-18 07:54:15.923",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -1060,18 +1038,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312902_1978087038",
+      "jobName": "paragraph_1574063655923_1290780733",
       "id": "20191114-072730_1892952575",
-      "dateCreated": "2019-11-18 03:38:32.902",
-      "dateStarted": "2019-11-18 07:44:22.806",
-      "dateFinished": "2019-11-18 07:44:24.461",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.923",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql\nSELECT DISTINCT CITY, LATITUDE AS LAT, LONGITUDE AS LON FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011230\u0027 AND LATITUDE \u003e 0 ORDER BY LAT DESC LIMIT 20",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:44:16.370",
+      "dateUpdated": "2019-11-18 07:54:15.924",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -1189,18 +1166,17 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312902_-1431166778",
+      "jobName": "paragraph_1574063655923_-1847974385",
       "id": "20191113-111609_1486788551",
-      "dateCreated": "2019-11-18 03:38:32.902",
-      "dateStarted": "2019-11-18 07:44:16.394",
-      "dateFinished": "2019-11-18 07:44:17.574",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.923",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sql\nSELECT CITY, LATITUDE AS LAT, LONGITUDE AS LON, COUNT(*) AS SURNAME_PEOPLE_COUNT FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011230\u0027 AND SUR_NAME IN (SELECT SUR_NAME FROM LIGHTNING_TUTORIAL WHERE EVENT_TIME \u003d \u0027201903011230\u0027 GROUP BY SUR_NAME ORDER BY COUNT(*) DESC LIMIT 1) GROUP BY CITY, LAT, LON",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:44:06.439",
+      "dateUpdated": "2019-11-18 07:54:15.924",
       "config": {
         "editorSetting": {
           "language": "sql",
@@ -1281,32 +1257,31 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574048312902_1141936546",
+      "jobName": "paragraph_1574063655924_-1953306719",
       "id": "20191114-092708_1878508289",
-      "dateCreated": "2019-11-18 03:38:32.902",
-      "dateStarted": "2019-11-18 07:44:06.461",
-      "dateFinished": "2019-11-18 07:44:09.866",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.924",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n#### 8. Clear data from LightningDB\n\nYou can clear data from LightningDB by reseting cluster of LightningDB.",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:43:58.511",
+      "dateUpdated": "2019-11-18 07:54:15.924",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
+        "tableHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
           "completionKey": "TAB",
           "completionSupport": false
         },
+        "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
         "editorHide": true,
-        "tableHide": false
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -1322,48 +1297,45 @@
         ]
       },
       "apps": [],
-      "jobName": "paragraph_1574062844791_792355696",
+      "jobName": "paragraph_1574063655924_-639935188",
       "id": "20191118-074044_343964613",
-      "dateCreated": "2019-11-18 07:40:44.791",
-      "dateStarted": "2019-11-18 07:43:58.511",
-      "dateFinished": "2019-11-18 07:43:58.515",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.924",
+      "status": "READY",
+      "errorMessage": "",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%sh\necho \"cluster restart --reset\" | fbctl\n",
       "user": "anonymous",
-      "dateUpdated": "2019-11-18 07:44:40.763",
+      "dateUpdated": "2019-11-18 07:54:15.924",
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 9.0,
-        "enabled": true,
-        "results": {},
         "editorSetting": {
           "language": "sh",
           "editOnDblClick": false,
           "completionKey": "TAB",
           "completionSupport": false
         },
-        "editorMode": "ace/mode/sh"
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
         "forms": {}
       },
       "apps": [],
-      "jobName": "paragraph_1574063013117_-546853927",
+      "jobName": "paragraph_1574063655924_1235151973",
       "id": "20191118-074333_201947226",
-      "dateCreated": "2019-11-18 07:43:33.117",
-      "dateStarted": "2019-11-18 07:44:40.789",
-      "dateFinished": "2019-11-18 07:45:41.766",
-      "status": "FINISHED",
+      "dateCreated": "2019-11-18 07:54:15.924",
+      "status": "READY",
       "errorMessage": "",
       "progressUpdateIntervalMs": 500
     }
   ],
   "name": "LightningDB Tutorial",
-  "id": "2EVWV337K",
+  "id": "2ESAGX565",
   "noteParams": {},
   "noteForms": {},
   "angularObjects": {
